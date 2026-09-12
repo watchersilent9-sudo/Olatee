@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Review your Olatee shopping cart and prepare your order for checkout.">
+
+    <title>Your Cart | Olatee</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="index.html" class="brand" aria-label="Olatee Home">
+
+                <span class="brand-mark">
+                    <svg viewBox="0 0 48 48" aria-hidden="true">
+                        <path d="M25 6c-4 5-5 10-3 15 2 4 6 6 10 5-1 6-5 11-12 12-8 1-14-4-15-11-1-7 3-12 10-15 3-1 6-3 10-6Z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                        <path d="M18 35c4-5 8-8 13-10"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2.5"
+                              stroke-linecap="round"/>
+                    </svg>
+                </span>
+
+                <span class="brand-name">Olatee</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="shop.html">Shop</a>
+                <a href="shop.html">Collections</a>
+                <a href="shop.html">New Arrivals</a>
+                <a href="shop.html">Offers</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <a href="shop.html" class="header-icon" aria-label="Search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="6.5"></circle>
+                        <path d="M16 16l5 5"></path>
+                    </svg>
+                </a>
+
+                <a href="cart.html" class="header-icon cart-icon active" aria-label="Shopping cart">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L21 7H6"></path>
+                        <circle cx="10" cy="20" r="1.2"></circle>
+                        <circle cx="18" cy="20" r="1.2"></circle>
+                    </svg>
+                    <span class="cart-count">1</span>
+                </a>
+
+                <button class="mobile-menu-button" type="button" aria-label="Open menu">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16M4 12h16M4 17h16"></path>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Cart Hero -->
+        <section class="cart-hero">
+            <div class="container">
+
+                <p class="eyebrow">YOUR BAG</p>
+
+                <h1>Your shopping cart.</h1>
+
+                <p>
+                    Review your selected pieces before moving on to checkout.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Cart -->
+        <section class="cart-section">
+            <div class="container">
+
+                <div class="cart-layout">
+
+                    <!-- Cart Items -->
+                    <div class="cart-items">
+
+                        <div class="cart-heading">
+                            <h2>Cart Items</h2>
+                            <span>1 item</span>
+                        </div>
+
+
+                        <article class="cart-item">
+
+                            <div class="cart-item-image product-placeholder product-pixie">
+                                <span>OLATEE</span>
+                            </div>
+
+
+                            <div class="cart-item-details">
+
+                                <p class="product-category">
+                                    PIXIE CURL COLLECTION
+                                </p>
+
+                                <h3>
+                                    <a href="product.html">
+                                        Luxury Pixie Curl
+                                    </a>
+                                </h3>
+
+                                <p class="cart-variant">
+                                    Length: 14" &nbsp; | &nbsp; Color: Natural Black
+                                </p>
+
+                                <button class="remove-item" type="button">
+                                    Remove
+                                </button>
+
+                            </div>
+
+
+                            <div class="cart-item-quantity">
+
+                                <label for="quantity-1" class="sr-only">
+                                    Quantity
+                                </label>
+
+                                <div class="quantity-control">
+
+                                    <button type="button" aria-label="Decrease quantity">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M5 12h14"></path>
+                                        </svg>
+                                    </button>
+
+                                    <input
+                                        id="quantity-1"
+                                        type="number"
+                                        value="1"
+                                        min="1"
+                                        max="10"
+                                    >
+
+                                    <button type="button" aria-label="Increase quantity">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M12 5v14M5 12h14"></path>
+                                        </svg>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="cart-item-price">
+                                ₦185,000
+                            </div>
+
+                        </article>
+
+
+                        <!-- Empty Cart State -->
+                        <div class="empty-cart" hidden>
+
+                            <div class="empty-cart-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 2-1.6L21 7H6"></path>
+                                    <circle cx="10" cy="20" r="1.2"></circle>
+                                    <circle cx="18" cy="20" r="1.2"></circle>
+                                </svg>
+                            </div>
+
+                            <h2>Your cart is empty.</h2>
+
+                            <p>
+                                You haven't added anything to your cart yet.
+                            </p>
+
+                            <a href="shop.html" class="btn btn-primary">
+                                Continue Shopping
+                            </a>
+
+                        </div>
+
+
+                        <a href="shop.html" class="continue-shopping">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 12H5"></path>
+                                <path d="M11 6l-6 6 6 6"></path>
+                            </svg>
+
+                            Continue Shopping
+                        </a>
+
+                    </div>
+
+
+                    <!-- Order Summary -->
+                    <aside class="cart-summary">
+
+                        <h2>Order Summary</h2>
+
+                        <div class="summary-line">
+                            <span>Subtotal</span>
+                            <strong>₦185,000</strong>
+                        </div>
+
+                        <div class="summary-line">
+                            <span>Delivery</span>
+                            <span>Calculated at checkout</span>
+                        </div>
+
+                        <div class="summary-divider"></div>
+
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <strong>₦185,000</strong>
+                        </div>
+
+                        <a href="checkout.html" class="btn btn-primary checkout-button">
+                            Proceed to Checkout
+                        </a>
+
+                        <p class="secure-checkout">
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="5" y="10" width="14" height="10" rx="2"></rect>
+                                <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                            </svg>
+
+                            Secure checkout
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Shopping Benefits -->
+        <section class="cart-benefits">
+
+            <div class="container">
+
+                <div class="benefits-grid">
+
+                    <div class="benefit-card">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 6h11v11H3z"></path>
+                            <path d="M14 10h4l3 3v4h-7z"></path>
+                            <circle cx="7" cy="19" r="1.5"></circle>
+                            <circle cx="18" cy="19" r="1.5"></circle>
+                        </svg>
+
+                        <div>
+                            <h3>Fast Delivery</h3>
+                            <p>Get your order delivered with care.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="4" y="10" width="16" height="10" rx="2"></rect>
+                            <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                        </svg>
+
+                        <div>
+                            <h3>Secure Shopping</h3>
+                            <p>Your checkout experience stays protected.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit-card">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 3l7 3v5c0 5-3.2 8.3-7 10-3.8-1.7-7-5-7-10V6l7-3Z"></path>
+                            <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+
+                        <div>
+                            <h3>Quality Assured</h3>
+                            <p>Beautiful pieces selected with care.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand">
+                    <span class="brand-mark">
+                        <svg viewBox="0 0 48 48" aria-hidden="true">
+                            <path d="M25 6c-4 5-5 10-3 15 2 4 6 6 10 5-1 6-5 11-12 12-8 1-14-4-15-11-1-7 3-12 10-15 3-1 6-3 10-6Z"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                            <path d="M18 35c4-5 8-8 13-10"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"/>
+                        </svg>
+                    </span>
+
+                    <span class="brand-name">Olatee</span>
+                </a>
+
+                <p>
+                    Hair designed to make every entrance unforgettable.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Shop</h3>
+
+                <a href="shop.html">All Products</a>
+                <a href="shop.html">Wigs</a>
+                <a href="shop.html">Pixie Curls</a>
+                <a href="shop.html">Bouncy Curls</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Help</h3>
+
+                <a href="#">Delivery</a>
+                <a href="#">Returns</a>
+                <a href="#">Contact Us</a>
+                <a href="cart.html">Cart</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Olatee</h3>
+
+                <a href="#">About Us</a>
+                <a href="#">Our Story</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 Olatee. All rights reserved.
+            </p>
+
+            <p>
+                Crafted with care.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
