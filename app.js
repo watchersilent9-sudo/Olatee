@@ -531,3 +531,19 @@ if (productThumbnails.length && productPhoto) {
         });
     });
 }
+const colorOptions = document.querySelectorAll('input[name="color"]');
+const selectedColor = document.querySelector("#selected-color");
+
+if (colorOptions.length && selectedColor) {
+    colorOptions.forEach(option => {
+        option.addEventListener("change", () => {
+            const colorNames = {
+                "natural-black": "Natural Black",
+                "brown": "Brown",
+                "burgundy": "Burgundy"
+            };
+
+            selectedColor.textContent = colorNames[option.value];
+        });
+    });
+}
