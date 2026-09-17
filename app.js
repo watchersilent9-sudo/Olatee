@@ -516,3 +516,18 @@ if (quantityControl) {
         quantityInput.value = currentQuantity + 1;
     });
 }
+const productThumbnails = document.querySelectorAll(".product-thumbnail");
+const productPhoto = document.querySelector("#product-photo");
+
+if (productThumbnails.length && productPhoto) {
+    productThumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener("click", () => {
+            productThumbnails.forEach(item => {
+                item.classList.remove("active");
+            });
+
+            thumbnail.classList.add("active");
+            productPhoto.textContent = `IMAGE 0${index + 1}`;
+        });
+    });
+}
