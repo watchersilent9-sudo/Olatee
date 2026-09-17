@@ -496,3 +496,23 @@ const menuButton = document.querySelector(".menu-button");
     updateCartCount();
 
 });
+const quantityControl = document.querySelector(".quantity-control");
+
+if (quantityControl) {
+    const decreaseButton = quantityControl.querySelector("button:first-child");
+    const increaseButton = quantityControl.querySelector("button:last-child");
+    const quantityInput = quantityControl.querySelector("input");
+
+    decreaseButton.addEventListener("click", () => {
+        const currentQuantity = parseInt(quantityInput.value) || 1;
+
+        if (currentQuantity > 1) {
+            quantityInput.value = currentQuantity - 1;
+        }
+    });
+
+    increaseButton.addEventListener("click", () => {
+        const currentQuantity = parseInt(quantityInput.value) || 1;
+        quantityInput.value = currentQuantity + 1;
+    });
+}
